@@ -1,5 +1,6 @@
-# Please-Take-Care-of-My-Refrigerator
+# Today I Learn_일일커밋!
 
+Please-Take-Care-of-My-Refrigerator
 "냉장고를 부탁해"_미니프로젝트
 
 냉장고 관리 를 쉽게 할 수 있는 프로그램
