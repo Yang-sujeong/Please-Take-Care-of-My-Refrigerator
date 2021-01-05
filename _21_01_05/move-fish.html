@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #panel{
+            width:600px;
+            height:300px;
+            border:1px solid #999;
+            position:relative;
+        }
+        #bar{
+            position:absolute;
+            left:50px;
+            top:190px;
+            width:500px;
+            height:20px;
+            background:#f30;
+        }
+        #fish{
+            position:absolute;
+            left:50px;
+            top:120px;
+        }
+        #nav{
+            margin-top:20px;
+            text-align:center;
+            width:600px;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $fish = $("#fish");
+            var step = 50;
+
+            $("#btnStart").click(function(){
+                var x = $fish.position().left + step;
+
+                if(x >= 430){
+                    x = 430;
+                    $fish.attr("src", "../images/fish2.png");
+                    step = -50;
+                }
+                else if(x < 50){
+                    x = 50;
+                    $fish.attr("src", "../images/fish1.png");
+                    step = 50;
+                }
+
+                $fish.css("left", x);
+            });
+            $("#btnStop").click(function(){
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="panel">
+        <img src="../images/fish1.png" id="fish">
+        <div id="bar"></div>
+    </div>
+    <div id="nav">
+        <button id="btnStart">시작</button>
+        <button id="btnStop">멈춤</button>
+    </div>
+</body>
+</html>
