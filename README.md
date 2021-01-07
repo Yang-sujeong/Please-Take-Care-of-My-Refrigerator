@@ -24,4 +24,8 @@ move-fish
 fish-racing-game
 "사진위치랜덤으로 바꾸기"_JavaScript, Jquery 
 
+✔ 2021_01_07
+My-real-ticket
+"항공예약프로그램"_Java+DB미니프로젝트 
+
 
