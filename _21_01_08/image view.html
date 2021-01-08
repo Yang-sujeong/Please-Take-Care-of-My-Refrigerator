@@ -1,0 +1,118 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD Xhtml 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <style>
+        body {
+            font-size: 9pt;
+        }
+
+        .panel {
+            width: 840px;
+            height: 415px;
+            border: 1px solid #ccc;
+        }
+
+        .nav {
+            width: 840px;
+            text-align: center;
+        }
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script>
+        // 전역변수 선언
+        var nextView = 1;
+        var timer;
+        // 시작
+        $(document).ready(function () {
+            init();
+            
+            // 전역 요소 초기화
+            function init() {
+                $view = $("#view");
+            }
+
+            $("#play").on("click", function () {
+                startAutoPlay();
+            });
+
+            $("#stop").on("click", function () {
+                clearInterval(timer);
+            });
+
+            $("#prev").on("click", function () {
+                prevImage();
+
+            });
+
+            $("#next").on("click", function () {
+                nextImage();
+            });
+        })
+
+        // 오토 플레이 실행
+        function startAutoPlay() {
+            timer = setInterval(function () {
+                $view.attr("src", "../til/_21_01_08/images/" + nextView + ".jpg");
+                nextView++;
+
+                if (nextView == 60) {
+                    nextView = 1;
+                }
+            }, 100);
+
+        }
+        // 이전 이미지
+        function prevImage() {
+            if (nextView > 1) {
+                nextView--;
+                $view.attr("src", "../til/_21_01_08/images/" + nextView + ".jpg");
+            } else if (nextView <= 1) {
+                nextView = 60;
+                nextView--;
+                $view.attr("src", "../til/_21_01_08/images/" + nextView + ".jpg");
+            }
+
+        }
+        // 다음 이미지
+        function nextImage() {
+            if (nextView < 60) {
+                nextView++;
+                $view.attr("src", "../til/_21_01_08/images/" + nextView + ".jpg");
+            } else {
+                nextView = 1;
+                nextView++;
+                $view.attr("src", "../til/_21_01_08/images/" + nextView + ".jpg");
+            }
+
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="panel">
+        <img src="../til/_21_01_08/images/1.jpg" id="view">
+    </div>
+    <div class="nav">
+        <button id="play">
+            play
+        </button>
+        <button id="stop">
+            stop
+        </button>
+        <button id="prev">
+            prev
+        </button>
+        <button id="next">
+            next
+        </button>
+    </div>
+</body>
+
+</html>
