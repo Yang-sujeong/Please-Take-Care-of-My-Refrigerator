@@ -28,4 +28,8 @@ fish-racing-game
 My-real-ticket
 "항공예약프로그램"_Java+DB미니프로젝트 
 
+✔ 2021_01_08
+Image-view
+"이미지 오토플레이"_JavaScript, Jquery
+
 
