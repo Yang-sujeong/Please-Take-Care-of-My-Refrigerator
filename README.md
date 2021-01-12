@@ -35,5 +35,3 @@ Image-view
 ✔ 2021_01_12
 TodoList
 "오늘할일"_HTHML, CSS, JavaScript, Jquery
-
-
