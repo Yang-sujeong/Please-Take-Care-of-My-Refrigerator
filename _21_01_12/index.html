@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/axicon.css" rel="stylesheet">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script>
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="container">
+            <aside id="sidebar" class="only_web">
+                <section id="section01" class="clearfix">
+                    <input type="text" id="search" name="setxt" onfocus="this.value=''; return true" value="검색">
+                    <ul class="main_menu">
+                        <li><a href="#"><span class="list01"><img src="image/icon01.jpg"></span>오늘<p>0</p></a></li>
+                        <li><a href="#"><span class="list02"><img src="image/icon02.jpg"></span>예정된 항목<p>0</p></a></li>
+                        <li><a href="#"><span class="list03"><img src="image/icon03.jpg"></span>전체<p>0</p></a></li>
+                        <li><a href="#"><span class="list04"><img src="image/icon04.jpg"></span>깃발 표시됨<p>0</p></a></li>
+                    </ul>
+                </section><!--section01 end-->
+                <section id="section02">
+                    <h3>나의 목록</h3>
+                    <ul class="sub_menu">
+                        <li><a href="#"><span class="list1"><img src="image/list.png"></span>All<p></p></a></li>
+                        <li><a href="#"><span class="list2"><img src="image/list.png"></span>Active<p></p></a></li>
+                        <li><a href="#"><span class="list3"><img src="image/list.png"></span>Completed<p></p></a></li>
+                        <li><a href="#"><span class="list4"><img src="image/list.png"></span>Developer<p></p></a></li>
+                    </ul>
+                    <section class="add"><i class="axi axi-circle-plus"></i><p>목록 추가</p></section>
+                </section><!--section02 end-->
+            </aside><!--sidebar end-->
+            <section id="content" class="active">
+                <button class="m_gnb only_m" onclick="openGnb()"><img src="image/bar.png"></button>
+                <div class="contentWrap" id="contentWrap1">
+                    <header id="todo_header">
+                        <h1>All</h1>   
+                    </header><!--header end-->
+                    <ul class="list">
+                        <!-- <li><button type="submit" class="checkbtn">체크</button><p>💪 미니 프로젝트 완성하기 🤭🌼</p></li>
+                    </ul>
+                    <!-- <button type="submit" class="addbtn" alt="추가">+</button> -->
+                </div><!--contentWrap end-->
+                <div class="contentWrap" id="contentWrap2">
+                    <header id="todo_header">
+                        <h1>Active</h1>
+                    </header><!--header end-->
+                    <ul class="list" id="actList">
+                        <!-- li들어갈 부분-->
+                    </ul>
+                    <button type="submit" class="addbtn" alt="추가">+</button>
+                </div><!--contentWrap end-->
+                <div class="contentWrap" id="contentWrap3">
+                    <header id="todo_header">
+                        <h1>Completed</h1>
+                    </header><!--header end-->
+                    <ul class="list">
+                        <!-- li들어갈 부분-->
+                    </ul>
+                    <!-- <button type="submit" class="addbtn" alt="추가">+</button> -->
+                </div><!--contentWrap end-->
+            </section><!--content end-->
+        </div><!--container end-->
+    </div><!--wrap end-->
+</body>
+</html>
