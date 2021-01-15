@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title><!--210114 이수민 추가-->
+    <link href="image/menu.ico" rel="shortcut icon" type="image/x-icon"><!--210114 이수민 추가-->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <script src="jquery-1.12.4.min.js"></script>
+    <script defer src="todo.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="container" class="clearfix">
+            <aside id="sidebar" class="only_web">
+                <section id="section01">
+                    <span><img src="image/grou.png"></span>
+                    <input type="text" id="search" onkeyup="filter()" name="setxt" onfocus="this.value=''; return true" value="검색" autocomplete = "off"><!--onkeyup="filter()" 210114 이수민 추가-->
+                </section> <!--section01 end-->
+                <section id="section02">
+                    <h3>나의 목록</h3>
+                    <ul class="sub_menu">
+                        <li class="All"><a href="#"><span class="list1"><img src="image/list.png"></span>All<p id="all"></p></a></li>
+                        <li class="Active"><a href="#"><span class="list2"><img src="image/list.png"></span>Active<p id="active"></p></a></li>
+                        <li class="Completed"><a href="#"><span class="list3"><img src="image/list.png"></span>Completed<p id="completed"></p></a></li>
+                        <li class="Developer"><a href="#"><span class="list4"><img src="image/list.png"></span>Developer<p></p></a></li>
+                    </ul>
+                    </section>
+                </section> <!--section02 end-->
+            </aside>
+            <section id="content">
+                <div class="empty">
+                <span class="Btn">+</span></div>
+                <button class = "del_btn">Delete All</button>
+                <a href="#" class="m_gnb only_m"><img src="image/bar.png"></a>
+                <div class="contentWrap">
+                    <header id="todo_header">
+                        <!--<h1>  생성 active all complete </h1> -->
+                        <p class="count"></p>
+                    </header>
+                    <!--header end-->
+                    <div id="list-Area">
+                        <ul class="js-toDoList">
+                            <!-- li 가 생겨야한는 부분 -->
+                        </ul>
+                        <form class="js-toDoForm">
+                            <button></button><input id="test" type="text"  autofocus autocomplete = "off"/>
+                        </form>
+                    </div>
+                    
+                    <div id = "member-Area" class="clearfix">
+                        <div class="idcard">
+                            <div><span><img src="image/JH.jpg"></span></div>
+                            <div class="roles">Jihee Jung</div>
+                            <div class="mail">jjh1637@gmail.com</div>
+                            <div class="mail">Seoul Korea </div>
+                            <ul name="user.skills">
+                               <li name="user.skills-0">#코딩천재</li>
+                               <li name="user.skills-1">#난새벽에불타오르지</li>
+                            </ul>
+                         </div>
+                         <div class="idcard">
+                            <div><span><img src="image/YI.jpg"></span></div>
+                            <div class="roles">Yein Son</div>
+                            <div class="mail">jn092010@gmail.com</div>
+                            <div class="mail">Seoul Korea </div>
+                            <ul name="user.skills">
+                               <li name="user.skills-0">#문과의끝에서</li>
+                               <li name="user.skills-1">#코딩을외치다</li>
+                            </ul>
+                         </div>
+                         <div class="idcard">
+                            <div><span><img src="image/SJ.jpg"></span></div>
+                            <div class="roles">Sujeong Yang</div>
+                            <div class="mail">tnwjd7137@gmail.com</div>
+                            <div class="mail">Seoul Korea </div>
+                            <ul name="user.skills">
+                               <li name="user.skills-0">#숨은고수</li>
+                               <li name="user.skills-1">#코드?다잡아주겠어</li>
+                            </ul>
+                         </div>
+                         <div class="idcard">
+                            <div><span><img src="image/SM.jpg"></span></div>
+                            <div class="roles">Soomin Lee</div>
+                            <div class="mail">soomang808@gmail.com</div>
+                            <div class="mail">Incheon Korea </div>
+                            <ul name="user.skills">
+                               <li name="user.skills-0">#코드?당근완벽</li>
+                               <li name="user.skills-1">#정리도깔끔히!</li>
+                            </ul>
+                         </div>
+                    </div>
+
+                </div>
+            </section><!--contentWrap end-->
+            <!--content end-->
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,328 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import 
+url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button{margin:0; padding:0;}
+body,h1,h2,h3,h4,h5,h6 {font-size:12px; font-family: 'Noto Sans KR', sans-serif; color:#333;}
+a {text-decoration:none; color:#333;}
+img, fieldset {border:none; vertical-align: middle;}
+ul,ol,li {list-style: none;}
+strong,em,address {font-weight:normal; font-style:normal;}
+table {border-collapse:collapse;}
+
+.clearfix:after { /*날아갈경우 높이 지정*/
+    content:"";
+    display:block;
+    clear:both;
+}
+html, body {
+    background: url("../image/bg.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+	height: 100%;
+}
+/*siderbar*/
+#sidebar {
+    float: left;
+    background-color: #3a383f;
+    opacity: 90%;
+    position: relative;
+    height: 100%;
+    border-top-left-radius: 20px 20px;
+    border-bottom-left-radius: 20px 20px;
+}
+/*section01*/
+#section01 {
+    position: absolute;
+    top: 60px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+#section01 input {
+    display: inline-block;
+    background: url("../image/search.png") no-repeat;
+    height: 30px;
+    border-radius: 7px;
+    text-indent: 2em;
+    font-size: 18px;
+    font-weight: 600;
+    color: #85838a;
+    cursor: pointer;
+    margin: 20px 0 30px 0;
+}
+/*section02*/
+#section02 {
+    position: absolute;
+    top:190px;
+}
+#section02 h3 {
+    color: #b1b0b6;
+    font-size: 18px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+#section02 .sub_menu {
+    margin-bottom: 70px;
+}
+#section02 .sub_menu li {
+    position: relative;
+    padding: 16px 30px;
+    cursor: pointer;
+    background-color: #3a383f;
+}
+#section02 .sub_menu li:hover {
+    background-color: #5e5c63;
+}
+#section02 .sub_menu li .selcet {
+    background-color: #5e5c63;
+}
+#section02 .sub_menu .list2 {
+    background-color: #0084fb;
+}
+#section02 .sub_menu .list3 {
+    background-color: #ecb5af;
+}
+#section02 .sub_menu .list4 {
+    background-color: #4a9459;
+}
+#section02 .sub_menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+#section02 .sub_menu li span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #ff9f2b;
+    border-radius: 50%;
+    margin-right: 15px;
+    line-height: 34px;
+    vertical-align: middle;
+}
+#section02 .sub_menu p {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 20px;
+    color: #b1b0b6;
+}
+/*content*/
+#content .m_gnb {
+    position: absolute;
+    left: 30px;
+    top:30px;
+}
+#content .m_gnb img {
+    width: 64px;
+    height: 47px;
+}
+#content {
+    float: right;
+    background-color: #2c2b32;
+    border-left: 1px solid #000;
+    position: relative;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+}
+#content .contentWrap {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+}
+#content #todo_header {
+    position: relative;
+    margin-bottom: 30px;
+}
+#content #todo_header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 42px;
+    color: #ff9f2b;
+}
+#content #todo_header p {
+    font-family: 'Fredoka One', cursive;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 42px;
+    color: #fff;
+}
+/*list-Are*/
+#list-Area .js-toDoList >li {
+    position: relative;
+    margin-bottom:20px;
+}
+
+#list-Area .js-toDoList > li {
+    height: 50px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+#list-Area .js-toDoList > li > button {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url("../image/check2.png") no-repeat;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    outline: 0;
+}
+#list-Area .js-toDoList > li > button:hover {
+    background-position-y: -50px;
+}
+/*#list-Are .complete*/
+#list-Area .js-toDoList .complete > button {
+    background-position-y: -50px;
+}
+#list-Area .js-toDoList .complete > button:hover {
+    background-position-y: 0px;
+}
+#list-Area .js-toDoList .complete > span {
+    text-decoration: line-through;
+    font-style: italic;
+    cursor: pointer;
+}
+/*js-toDoForm*/
+.js-toDoForm {
+    height: 60px;
+    width: 100%;
+    display:none;
+}
+.js-toDoForm #test{
+    height: 40px;
+    display: inline-block;
+    color: #888;
+    font-size: 24px;
+    line-height: 60px;
+    border:none;
+    outline:none;
+    background-color:transparent;
+    border-bottom:1px solid #888;
+}
+.js-toDoForm > button {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: url("../image/check2.png") no-repeat;
+    border: none;
+    text-indent: -9999px;
+    cursor: pointer;
+    outline: 0;
+}
+.empty{
+    position: absolute;
+    width:100%;
+    left:0;
+    bottom:0;
+    padding-top: 100%;
+}
+.Btn{
+    background-color:transparent;
+    font-family: 'Fredoka One';
+    border: none;
+    outline: none;
+    font-weight: 200;
+    font-size: 50px;
+    color: #999;
+    cursor: pointer;
+    padding-top:20px;
+    position: absolute;
+    left:30px;
+    bottom: 50px;
+}
+.Btn:hover {
+    color: #fff;
+}
+
+.del_btn {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    border: none;
+    background: none;
+    color: #999999;
+    font-size: 30px;
+    font-family:'Fredoka One';
+    outline: none;
+    cursor: pointer;
+}
+.del_btn:hover {
+    color:#fff;
+}
+
+
+#member-Area {
+    width: calc(100% - 8px);
+    margin-top: 2.2%;
+    display: none;
+}
+ 
+#member-Area .idcard  {
+    background: white;
+    width: 44%;
+    padding-bottom: 1.7%;
+    margin-left: 15px;
+    margin-bottom: 1.8%;
+    padding-top: 1.8%;
+    border-radius: 10px;
+	color: #7a8085;
+	float: left;
+	min-height: auto;
+	top: 0;
+	transition: all .1s ease-in;
+}
+
+ #member-Area .idcard img {
+    width: 44%;
+    height: auto;
+}
+
+.idcard .roles {
+    font-size: 2e;
+    color: #111;
+}
+
+.idcard .mail {
+    font-size: 1em;
+    margin: 0;
+    color: #888;
+}
+
+.idcard > * {
+	text-align: center;
+}
+
+.name > * {
+	margin: 0;
+}
+
+.idcard {
+	padding: 0 1.8%;
+}
+/* 
+.idcard > div {
+	margin: 7px 0;
+} */
+
+.idcard ul {
+	display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 2.4%;
+	padding: 0;
+}
+
+.idcard ul li {
+    background-color: #ffb700;
+    height: 1.7%;
+	color: white;
+	border: 1px solid;
+	border-radius: 2em;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0.20em;
+	padding: 0.3em 1.2em;
+}
