@@ -38,4 +38,4 @@ TodoList
 
 ✔ 2021_01_15
 TodoList
-"오늘할일"_HTHML, CSS, JavaScript
+"오늘할일"_HTHML, CSS, JavaScript프로젝트 
