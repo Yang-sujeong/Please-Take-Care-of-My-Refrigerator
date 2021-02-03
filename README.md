@@ -39,3 +39,7 @@ TodoList
 ✔ 2021_01_15
 TodoList
 "오늘할일"_HTHML, CSS, JavaScript프로젝트 
+
+✔ 2021_02_03
+TodoList
+"VeganTable"_HTHML, CSS, JavaScript, Jquery, ServletJSP프로젝트 
