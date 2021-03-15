@@ -1,4 +1,4 @@
-# Today I Learn_일일커밋!
+# Today I Learn_커밋!
 
 ✔ 2021_01_01
 Please-Take-Care-of-My-Refrigerator
